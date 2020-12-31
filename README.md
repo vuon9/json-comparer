@@ -1,5 +1,7 @@
 # JSON Comparer
 
+![Go](https://github.com/vuon9/jsoncomparer/workflows/Go/badge.svg)
+
 A small library which can be using for compare two JSON (after it has been processed by `json.Unmarshal`).
 The user-case could be a testing function.
 
