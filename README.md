@@ -1,14 +1,15 @@
 # JSON Comparer
 
-A small library which can be using for compare two JSON (after it has been processed by `json.Unmarshal`).
-The user-case could be a testing function.
+![Go](https://github.com/vuon9/jsoncomparer/workflows/Go/badge.svg)
 
-Built with :fireworks: sounds :clock12: in the city.
+A small library which can be using for compare two JSON (after it has been processed by `json.Unmarshal`).
+
+Built with :fireworks: sounds at :clock12: in the city.
 
 Minimum requirement Go version >= 1.13
 
 ```
-go get github.com/vuon9/jsoncomparer
+go get github.com/vuon9/json-comparer
 ```
 
 # Examples
