@@ -11,8 +11,6 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
-    env:
-        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
     steps:
 
     - name: Set up Go 1.x
@@ -35,4 +33,12 @@ jobs:
       run: go build -v ./...
 
     - name: Test
-      run: go test -v ./...
+      run: go test -v  -coverprofile=coverage.txt -covermode=atomic ./...
+
+    - name: Upload coverage report
+      uses: codecov/codecov-action@v1.2.0
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        file: ./coverage.txt
+        flags: unittests
+        name: codecov-umbrella
