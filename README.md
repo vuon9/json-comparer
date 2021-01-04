@@ -1,6 +1,7 @@
 # JSON Comparer
 
 ![Go](https://github.com/vuon9/jsoncomparer/workflows/Go/badge.svg)
+[![codecov](https://codecov.io/gh/vuon9/json-comparer/branch/main/graph/badge.svg?token=IR9FVLAFZC)](https://codecov.io/gh/vuon9/json-comparer)
 
 A small library which can be using for compare two JSON (after it has been processed by `json.Unmarshal`).
 
